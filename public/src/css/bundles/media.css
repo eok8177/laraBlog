@@ -1,0 +1,498 @@
+@media (max-width:950px) {
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .header .container {
+        width: calc(100% - 30px);
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .main__title__container {
+        padding: 5%
+    }
+    .main__title {
+        font-size: 42px;
+        line-height: 40px;
+        min-width: 250px
+    }
+    .news-line .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .news-line .exhibitions {
+        margin-right: 0
+    }
+    .news-line .news {
+        width: 100%
+    }
+    .news-line .news__wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .news-line .news__item {
+        width: 25%;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .news-line .news__item:first-child {
+        margin-top: 25px
+    }
+    .affiliate__advantages {
+        padding: 30px 0
+    }
+    .affiliate__advantages .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .affiliate__advantages__card {
+        margin-bottom: 50px
+    }
+    .affiliate__advantages__items {
+        width: 440px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .affiliate__offers .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .affiliate__offers__title {
+        margin-bottom: 50px
+    }
+    .affiliate__offers__title__wrapper {
+        margin-bottom: 50px
+    }
+    .affiliate__offers__items,
+    .affiliate__offers__title__wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px
+    }
+    .affiliate__offers__button {
+        width: 100%
+    }
+}
+
+
+@media (max-width:700px) {
+    .header .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .header__menu {
+        display: block
+    }
+    .header__full {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        -webkit-transition: height .5s ease, width .5s ease, padding .5s ease;
+        transition: height .5s ease, width .5s ease, padding .5s ease;
+        position: fixed;
+        right: 15px;
+        top: 90px;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 4px
+    }
+    .header__full.open {
+        height: auto;
+        width: 275px;
+        padding: 10px
+    }
+    .header__links {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-negative: 0;
+        flex-shrink: 0
+    }
+    .header__link {
+        margin-left: 0;
+        height: 50px
+    }
+    .header__link>a:after {
+        width: 100%
+    }
+    .header__link>a {
+        display: block;
+        text-align: center
+    }
+    .header__auth {
+        margin-top: 20px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        overflow: hidden
+    }
+    .header__auth__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .header__auth:last-child {
+        margin-left: 0
+    }
+    .main__title__container {
+        width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .about__title {
+        font-size: 42px;
+        margin-top: 30px
+    }
+    .about__links {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .about__link {
+        width: auto;
+        margin-bottom: 30px
+    }
+    .about__link:first-child {
+        margin-right: 0
+    }
+    .advantages__card {
+        width: calc(100% / 2 - 30px)
+    }
+    .contract {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .contract .affiliate,
+    .contract .employer {
+        width: 100%;
+        min-height: 50vh
+    }
+    .clients__title {
+        margin-top: 30px
+    }
+    .clients__img__container {
+        width: 33.33333%
+    }
+    .clients__wrapper {
+        margin-bottom: 30px
+    }
+    .news-line .news__title {
+        font-size: 50px
+    }
+    .news-line .news__item {
+        width: 33.33333%
+    }
+    .news-line .exhibitions__title {
+        font-size: 50px
+    }
+    .exhibitions__item__desc {
+    	padding: 20px;
+    }
+    .signup__tabs {
+    	-webkit-flex-direction: column;
+    	-moz-flex-direction: column;
+    	-ms-flex-direction: column;
+    	-o-flex-direction: column;
+    	flex-direction: column;
+    }
+    .signup__tabs > div {
+    	width: 100%;
+    }
+    .signup__tabs > div.active:after {
+    	top: 100%;
+    	border: 13px solid transparent;
+    	border-top: 13px solid #ee534f;
+    	left: 50%;
+    	transform: translateX(-50%);
+    }
+    .signup__tabs_content {
+		    padding: 20px;
+		}
+		.tabs_column3 {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;	
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;	
+			justify-content: space-between;	
+		}
+		.tabs_column3 .tabs__check-group  {
+			width: 100%;	
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;	
+			flex-wrap: wrap;
+			justify-content: space-between;	
+			margin-bottom: 20px;	
+		}
+		.control {
+			width: 48%;
+		}
+		.tabs__input-group .tabs_column2 .tabs-input__wrap {
+			width: 100%;	
+			
+		}
+		.tabs_column2 {
+			flex-wrap: wrap;
+		}
+		.tabs_content3 .tabs__input-group .tabs_column2 .tabs-input__wrap:last-child {
+			width: 100%	;
+		}
+    .footer__get-in-touch.open .footer__get-in-touch__bg {
+        left: 0;
+        right: 0
+    }
+    .footer__first-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 30px
+    }
+    .footer__get-in-touch {
+        margin-bottom: 60px
+    }
+    .footer__get-in-touch,
+    .footer__get-in-touch__mail-link {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+    .footer__social {
+        margin-left: auto;
+        margin-right: auto
+    }
+    .footer__social__title {
+        text-align: center
+    }
+    .footer__second-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .footer__links {
+        margin-right: auto;
+        margin-left: auto;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+    .footer__link {
+        margin-bottom: 20px
+    }
+    .footer_right {
+        margin-left: auto;
+        margin-right: auto
+    }
+     .affiliate-main {
+        background-position: right
+    }
+    .affiliate-main__button {
+        width: 100%
+    }
+    .news-line .news .news__title {
+			margin-bottom: 0px;
+		}
+}
+
+@media (max-width:550px) {
+	.signup-tabs__wrap {
+		width: 100%;		
+	}
+	.signup__tabs_content {
+		padding: 10px;
+	}
+	.tabs__input-group {
+		padding: 10px;
+	}
+	.rating {
+		padding: 60px 0;
+	}
+	.partners__title {
+		font-size: 42px;
+	}
+	.vote-result {
+		display: none;
+	}
+	.vote-hover {
+		margin: 0 auto;
+	}
+	div.vote-quan {
+		margin: 0;
+		width: 65px;
+		text-align: right;
+	}
+	 .about {
+    	padding: 70px 0 70px;
+    }
+    .advantages__card {
+    	padding: 0;
+    }
+    .news-line .exhibitions__item {
+        width: 100%
+    }
+    .affiliate__offers__items,
+    .affiliate__offers__title__wrapper {
+        width: 100%
+    }
+    .affiliate__offers__item {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%
+    }
+    .affiliate__offers__button {
+        width: 100%
+    }
+    .news-line .news__item {
+        width: 100%
+    }
+    .signin-tabs__wrap .tabs__input-group {
+    	padding: 20px;
+    }
+    .sign__title {
+    	font-size: 30px;
+    }
+    .tabs__button {
+    	-webkit-flex-direction: column;
+    	-moz-flex-direction: column;
+    	-ms-flex-direction: column;
+    	-o-flex-direction: column;
+    	flex-direction: column;
+    }
+    .tabs__button .button-continue {
+    	width: 100%;
+    	margin-top: 10px;
+    }
+    .button-return.arrow {
+    	width: 100%;
+    	margin-bottom: 10px;
+    	position: relative;	
+    }
+}
+
+@media (max-width:500px) {
+
+    .behind-click__title {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .behind-click__wrapper {
+        width: 100%
+    }
+    .behind-click__buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .behind-click__button {
+        width: 100%
+    }
+    .behind-click__button:first-child {
+        margin-bottom: 20px
+    }
+     .footer__first-row {
+        min-width: 270px
+    }
+    .footer__get-in-touch__button {
+        font-size: 26px
+    }
+     .affiliate__advantages__card,
+    .affiliate__advantages__item,
+    .affiliate__advantages__items {
+        width: 100%
+    }
+}
+@media (max-width:450px) {
+	.adv-form .tabs__input-group, .adv-form .tabs__button {
+		padding: 0;
+	}
+	.control {
+    width: 100%;
+}
+		.vote-quan {
+			display: none;
+		}
+		div.rating__star {
+		    width: auto;
+		}
+		.rating__site-name {
+			width: 100%;
+			flex-grow: 1;
+		}
+		.vote-hover {
+		    margin: 0;
+		}
+    .advantages__card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .advantages__card:last-child {
+        margin-bottom: 50px
+    }
+    .clients__img__container {
+        width: 50%
+    }
+    .slider-review {
+		    margin: 0 30px;
+		    width: calc(100% - 60px);
+		}
+		.slider-review.owl-carousel .owl-nav button.owl-next {
+			right: -30px;
+		}
+		.slider-review.owl-carousel .owl-nav button.owl-prev {
+			left: -30px;
+		}
+		.slider-review:before {
+			    left: -40px;
+		}
+		.slider-review:after {
+			right: -40px;
+		}
+}
+
+@media (max-width:450px) {
+	.rating__item {
+		flex-wrap: wrap;
+		justify-content: center;
+	} 
+	.rating__site-name {
+		margin-bottom: 5px;
+	}
+	.rating__site-name a {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,50 @@
+div.rating__star {
+    width: 67%;
+}
+div.vote-wrap{
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+div.vote-block{
+	position: relative;	
+}
+
+div.vote-hover{
+    cursor:  pointer;
+}
+div.vote-quan {
+    margin-left: 30px;
+}
+
+div.vote-stars{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+div.vote-active{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+div.vote-result{
+    color: #ccc;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+div.vote-success{
+    clear: both;
+    color: #ccc;
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+    display: none;
+}
