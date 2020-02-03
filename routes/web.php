@@ -23,6 +23,8 @@ Route::get('/login/{social}/callback','Auth\LoginController@handleProviderCallba
 // Admin
 Route::group(['as' => 'admin.', 'middleware' => 'roles','roles' =>['admin'], 'namespace' => 'Admin', 'prefix' => 'admin'], function() {
 
+    Route::get('/', ['as' => 'pages', 'uses' => 'PageController@index']);
+
     Route::resource('user', 'UserController');
 
     Route::resource('page', 'PageController');
@@ -43,3 +45,6 @@ Route::get('/resize/{w}/{h}',function($w=null, $h=null){
       $constraint->upsize();
   })->response('jpg');
 });
+
+
+Route::get('/{slug}', ['as' => 'front.page', 'uses' => 'FrontendController@page']);
