@@ -37,6 +37,10 @@ Route::group(['middleware' => ['roles', 'verified'],'roles' =>['user']], functio
 
 });
 
+Route::get('/signup', ['as' => 'front.signup', 'uses' => 'FrontendController@signup']);
+//Форма регистрации отправка
+Route::post('/signup', ['as' => 'front.signup-post', 'uses' => 'FrontendController@signupPost']);
+
 
 //Image resize & crop on view:  http://image.intervention.io/
 Route::get('/resize/{w}/{h}',function($w=null, $h=null){

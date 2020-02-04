@@ -46,4 +46,15 @@ class FrontendController extends Controller
         return $blocks;
     }
 
+    public function signup(Request $request)
+    {
+        return view('signup');
+    }
+
+    public function signupPost(Request $request)
+    {
+        $data = $request->all();
+        dd($data);
+    }
+
 }
