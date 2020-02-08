@@ -17,7 +17,9 @@ class CreateBlocksTable extends Migration
             $table->bigIncrements('id');
             $table->string('slug')->unique()->nullable();
             $table->string('title');
+            $table->string('type')->default('html'); // html | json
             $table->mediumText('text')->nullable();
+            $table->mediumText('config')->nullable();
             $table->timestamps();
         });
     }

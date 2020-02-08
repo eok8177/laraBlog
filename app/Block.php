@@ -29,4 +29,31 @@ class Block extends Model
             ]
         ];
     }
+
+    public function getTextAttribute($value)
+    {
+        if ($this->type == 'html') return $value;
+        if ($this->type == 'json') return $this->parseConfig($value);
+    }
+
+    private function parseConfig($text)
+    {
+        $config = json_decode($this->config);
+        if (!$config) return false;
+
+        foreach ($config as $item) {
+            $find[] = '{'.$item->name.'}';
+            $replace[] = $item->data;
+        }
+
+        return str_replace($find, $replace, $text);
+    }
 }
+
+// Example config array
+// [
+//     [
+//         'name' => 'image-1',
+//         'type' => 'file',
+//         'data' => '/img/client/dreamsingles.png'
+//     ],
