@@ -4,6 +4,7 @@ $('.partners__carousel__items').owlCarousel({
         nav:true,
         navText : ["<img src='../img/carousel__prev.png' height='32' width='21'/>","<img src='../img/carousel__next.png' height='32' width='21'/>"],
         dots:false,
+        loop:true,
         responsive:{
              0:{
                margin: 0,
@@ -30,6 +31,7 @@ $('.partners__carousel__items').owlCarousel({
         margin:30,
         nav:true,
         dots:false,
+        loop:true,
         responsive:{
                0:{
                margin: 0,
