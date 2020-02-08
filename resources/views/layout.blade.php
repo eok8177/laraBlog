@@ -33,14 +33,14 @@
 
 
     <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
- <!--    <script type="text/javascript" src="//www.FreePrivacyPolicy.com/cookie-consent/releases/3.0.0/cookie-consent.js"></script>
+    <script type="text/javascript" src="//www.FreePrivacyPolicy.com/cookie-consent/releases/3.0.0/cookie-consent.js"></script>
     <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"dark","change_preferences_selector":"#changePreferences","language":"en","website_name":"c3pa.net","change_settings_element":"Learn more"});
     });
     </script>   
 
-    <noscript>GDPR Cookie Consent by <a href="https://www.freeprivacypolicy.com/">FreePrivacyPolicy</a></noscript> -->
+    <noscript>GDPR Cookie Consent by <a href="https://www.freeprivacypolicy.com/">FreePrivacyPolicy</a></noscript>
 <!-- End Cookie Consent -->
 
 </head>
