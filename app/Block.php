@@ -30,13 +30,13 @@ class Block extends Model
         ];
     }
 
-    public function getTextAttribute($value)
+    public function getHtmlAttribute()
     {
-        if ($this->type == 'html') return $value;
-        if ($this->type == 'json') return $this->parseConfig($value);
+        if ($this->type == 'html') return $this->text;
+        if ($this->type == 'json') return $this->parseConfig();
     }
 
-    private function parseConfig($text)
+    private function parseConfig()
     {
         $config = json_decode($this->config);
         if (!$config) return false;
@@ -46,7 +46,7 @@ class Block extends Model
             $replace[] = $item->data;
         }
 
-        return str_replace($find, $replace, $text);
+        return str_replace($find, $replace, $this->text);
     }
 }
 

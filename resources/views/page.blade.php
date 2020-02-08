@@ -3,7 +3,7 @@
 @section('content')
 
 @foreach($blocks as $block)
-    {!! $block->text !!}
+    {!! $block->html !!}
 @endforeach
 
 
