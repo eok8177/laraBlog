@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Page;
+use App\Block;
 
 
 class PageController extends Controller
@@ -41,7 +42,10 @@ class PageController extends Controller
 
     public function edit(Page $page)
     {
-        return view('admin.page.edit', ['page' => $page]);
+        return view('admin.page.edit', [
+            'page' => $page,
+            'blocks' => Block::all()
+        ]);
     }
 
     public function update(Request $request, Page $page)
