@@ -23,6 +23,7 @@
         <tr>
           <th scope="col">Title</th>
           <th scope="col">Slug</th>
+          <th scope="col">type</th>
           <th scope="col"></th>
         </tr>
       </thead>
@@ -30,8 +31,10 @@
         <tr>
           <td><a href="{{ route('admin.block.edit', ['block'=>$block->id]) }}" class="btn">{{$block->title}}</a></td>
           <td><a href="{{ route('admin.block.edit', ['block'=>$block->id]) }}" class="btn">{{$block->slug}}</a></td>
+          <td><a href="{{ route('admin.block.edit', ['block'=>$block->id]) }}" class="btn">{{$block->type}}</a></td>
           <td class="text-center">
             <a href="{{ route('admin.block.edit', ['block'=>$block->id]) }}" class="btn fa fa-pencil" title="Edit"></a>
+            <a href="{{ route('admin.block.setting', ['block'=>$block->id]) }}" class="btn fa fa-cogs" title="Settings"></a>
             <a href="{{ route('admin.block.destroy', ['block'=>$block->id]) }}" class="btn fa fa-trash-o delete" title="Delete"></a>
           </td>
         </tr>

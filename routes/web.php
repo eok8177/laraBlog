@@ -29,6 +29,7 @@ Route::group(['as' => 'admin.', 'middleware' => 'roles','roles' =>['admin'], 'na
 
     Route::resource('page', 'PageController');
     Route::resource('block', 'BlockController');
+    Route::get('block/{block}/setting', ['as' => 'block.setting', 'uses' => 'BlockController@setting']);
 
 });
 

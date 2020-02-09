@@ -27,7 +27,9 @@ class BlockController extends Controller
 
     public function create()
     {
-        return view('admin.block.create', ['block' => new Block]);
+        $block = new Block;
+        $block->type = 'html';
+        return view('admin.block.create', ['block' => $block]);
     }
 
     public function store(Request $request, Block $block)
@@ -56,5 +58,10 @@ class BlockController extends Controller
         return response()->json([
             'status' => 'success'
         ]);
+    }
+
+    public function setting(Block $block)
+    {
+        return view('admin.block.setting', ['block' => $block]);
     }
 }
